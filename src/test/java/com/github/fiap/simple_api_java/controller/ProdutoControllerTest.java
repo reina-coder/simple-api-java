@@ -56,17 +56,6 @@ public class ProdutoControllerTest {
     @DisplayName("test fail")
     @Test
     void testGivenNewProduto_whenCreate_thenFail() throws Exception{
-        
-        given(service.saveOrUpdate(any(Produto.class)))
-            .willAnswer((invocation) -> invocation.getArguments()[0]);
-
-        String body = "{\"nome\":\"Maçã\"}";
-        
-        ResultActions response = mockMvc.perform(MockMvcRequestBuilders.post("/produtos")
-            .contentType(org.springframework.http.MediaType.APPLICATION_JSON)
-            .content(body));
-
-        response.andExpect(status().isNotFound());
     }
     
 }

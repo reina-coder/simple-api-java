@@ -1,6 +1,6 @@
 # Simple API Java
 
-Aplicação API 
+Aplicação API
 
 ## Pré-requisitos
 
@@ -14,7 +14,7 @@ Aplicação API
 docker compose up --build
 ```
 
-## Testes unitários
+## Testes unitários (validação)
 
 ./mvnw test
 
@@ -25,3 +25,4 @@ http://localhost:8080/swagger-ui/index.html
 
 ![](/assets/images/swagger.png)
 
+# Alteração realizada com sucesso.

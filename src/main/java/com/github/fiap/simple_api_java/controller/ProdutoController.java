@@ -25,6 +25,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ProdutoController {
     private final ProdutoService produtoService;
+
     
     @GetMapping
     public ResponseEntity<List<ProdutoResponseDto>> list() {
